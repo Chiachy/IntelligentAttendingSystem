@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_student_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="magic.com.intelligentattendingsystem.Activity.ActivityStudentView">
+
+    <android.support.v7.widget.Toolbar
+        app:title="学生页面"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:textSize="24dp"
+        android:text="当前课程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView16" />
+
+    <LinearLayout
+        android:id="@+id/t_linearLayout"
+        android:layout_marginEnd="16dp"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#2c2c2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程名称："/>
+
+            <TextView
+                android:id="@+id/s_course"
+                android:paddingEnd="8dp"
+                android:maxEms="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高等数学"/>
+
+            <TextView
+                android:textColor="#2c2c2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点："/>
+
+            <TextView
+                android:id="@+id/s_site"
+                android:paddingEnd="8dp"
+                android:maxEms="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#14-210"/>
+
+            <TextView
+                android:text="教师："
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/s_teacher_name"
+                android:text="刘二根"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="开始时间："
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/s_time_from"
+                android:paddingEnd="8dp"
+                android:text="8:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="结束时间："
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/s_time_to"
+                android:text="9:50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="签到当前课程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/button"
+        android:layout_below="@id/t_linearLayout"
+        android:layout_alignStart="@id/t_linearLayout"
+        android:layout_marginStart="41dp" />
+
+    <Button
+        android:text="申请假条"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginStart="59dp"
+        android:id="@+id/button3" />
+
+    <TextView
+        android:textSize="24dp"
+        android:text="当前课程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/button"
+        android:layout_marginStart="22dp" />
+
+    <ListView
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/t_linearLayout"
+        android:layout_below="@+id/textView18" />
+
+    <TextView
+        android:text="当前课程无选课学生"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

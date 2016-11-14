@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_asking4_leave"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="magic.com.intelligentattendingsystem.Activity.ActivityAsking4Leave">
+
+
+    <Toolbar
+        android:title="请假申请"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/tb_asking_for_leave"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="请假时间："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="57dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:text="请假理由："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/btn_choose_time"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:text="收件人："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reason"
+        android:layout_alignStart="@+id/et_reason"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textView13" />
+
+    <TextView
+        android:text="待选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:id="@+id/tv_show_reciver" />
+
+    <Button
+        android:text="点此选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_choose_reciver"
+        android:layout_alignBaseline="@+id/tv_show_reciver"
+        android:layout_alignBottom="@+id/tv_show_reciver"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="发送"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_choose_reciver"
+        android:layout_marginBottom="64dp"
+        android:id="@+id/btn_send" />
+
+    <TextView
+        android:text="待选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_show_the_time"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_applier"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:text="申请人："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/tb_asking_for_leave"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="(待填写...)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_reason"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <Button
+        android:text="点此选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_choose_time"
+        android:layout_alignBaseline="@+id/tv_show_the_time"
+        android:layout_alignBottom="@+id/tv_show_the_time"
+        android:layout_toEndOf="@+id/tv_show_the_time" />
+
+
+</RelativeLayout>
